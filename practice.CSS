@@ -1,0 +1,334 @@
+.box {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding-bottom: 5rem;
+    background-image: url(../../../imgs/1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.overlay{
+   backdrop-filter: blur(1px);
+   background-color: rgba(0, 0, 0,0.3);
+    position: absolute;
+    width: 100%;
+    height: 100%;  
+}
+
+.navbar {
+        justify-content: flex-end;
+        padding: 1rem 2rem;
+        color: white;
+        background: black;
+        
+}
+/*transition underline navbar*/
+    a.nav-link.text-light.fw-bold{
+    font-size: 1.3rem;
+    padding-right: 1.5rem;
+    text-decoration: none;
+    }
+    li.nav-item::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    background: #fff;
+    }
+    li.nav-item:hover::after{
+        width: 80%;
+    }
+
+a.logonavbar-brand.text-light.fw-bold{
+        font-size: 3rem;
+    padding-left: 1.5rem;
+    padding-top: 0px;
+    text-decoration:none;
+}
+.navbar a {
+    transition: opacity 0.3s ease;
+}
+/*I am Morgan freeman*/
+.first-sec.container-fluid{
+    position: relative;
+}
+.content.text-white.fw-bolder{
+    position: absolute;
+}
+.text-light{
+    font-family: "Habibi", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 80px;
+}
+
+.typewriter::before {
+    content: "";
+    animation: typing 13.5s infinite;
+}
+.typewriter::after {
+    content: "";
+    border-right: 1px solid var(--caret);
+    animation: blink 0.5s linear infinite;
+}
+
+.container.bg-white.p-5.shadow{
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 5%;
+    position: absolute;
+}
+/*section 2*/
+
+.container.text-center{
+    margin-bottom: 5%;
+    margin-top: 33%;
+}
+.circle{
+    width: 8rem;
+    height: 8rem;
+    box-shadow: 0 0 0 10px #0078ff;
+    transition: all 0.5s;
+    border-radius: 50%;
+    margin-left: 6.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle:hover {
+background-color: #3173ff;
+box-shadow: 0 0 0 10px hsl(207, 77%, 65%)
+
+}
+.icon:hover{
+    color: white;
+}
+
+
+        /*section 3*/
+section.service_sec.mt-sm-5{
+    min-height: 50%;
+    background-image: linear-gradient(rgba(0, 120, 255, 0.6), rgba(0, 120, 255, 0.6)), url(../../../imgs/3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.circle-t{
+    border: solid 12px rgba(255, 255, 255, 0.772);
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    margin-left: 5.5rem;
+}
+.right{
+    margin-top: 15px;
+    font-size: 26px;
+}
+
+        /*section 4*/
+h3.fw-bold.text-uppercase {
+    font-size: 3rem;
+}
+.icon_card.col-4.d-flex.justify-content-center.align-items-center{
+    height: 3rem;
+    border: solid #0078ff 5px;
+    border-radius: 50%;
+    width: 3rem;
+    margin: 1rem;
+}
+p.card-text {
+    font-size: 10px;
+}
+
+    /*section5*/
+.container.d-flex.justify-content-center.align-items-center.t-6 {
+    margin-top: 5rem;
+    background-image: linear-gradient(rgba(0, 120, 255, 0.6), rgba(0, 120, 255, 0.6)), url(../../../imgs/overlay-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 30rem;
+    color: white;
+}
+h5{
+    width: 38rem;
+}
+img.sec-5{
+    border-radius: 50%;
+}
+.buttn-1{
+        width: 15px;
+    height: 15px;
+    border: none;
+    border-radius: 50%;
+    margin: 0 2px;
+}
+.buttn-2{
+        width: 15px;
+    height: 15px;
+    border: none;
+    border-radius: 50%;
+    margin: 0 2px;
+    background-color: rgba(255, 255, 255, 0.46);
+}
+h2.fw-bold{
+    font-size: 85px;
+}
+
+
+/*section 6*/
+.card-title:hover{
+    color: #0078ff;
+}
+
+
+.travel{
+
+    align-items: center;
+    justify-content: center;
+    margin-left: 37%;
+    background-color: #0078ff;
+    color: white;
+    width: 4rem;
+    text-align: center;
+    border-radius: 20%;
+    position: absolute;
+    margin-top: 62%;
+    width: 7rem;
+    height: 2rem;
+
+}
+.card-text-blog{
+    font-size: 100;
+}
+.blogimg.fs-5.rounded-circle{
+    width: 15%;
+}
+.pblog{
+    display: inline-block;
+    color: black;
+    text-align: center;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    font-size: 20px;
+}
+.clock{
+    display: inline-block;
+}
+.blogging{
+    display: inline-block;
+    margin-left: 3rem;
+    color: black;
+    font-size: 17px;
+}
+section .card-info a {
+    position: relative;
+    transition: all 0.7s;
+}
+.path.rounded-5{
+    width: 32px;
+    margin-right: 4px;
+}
+
+
+   /*seciton 7 footer*/
+footer#contact{
+    min-height: 90vh;
+    margin-top: 50px;
+    background-image: linear-gradient(rgba(0, 120, 255, 0.6), rgba(0, 120, 255, 0.6)), url(../../../imgs/overlay-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 50rem;
+    position: relative;
+}
+.container.bg-white.p-5.shadow{
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 16%;
+    position: absolute;
+}
+.btn {
+    margin-left: 20%;
+}
+.btn .btn-primary .my-btn{
+    font-size: 19px;
+    border-width: 0px;
+    border-style: none;
+    border-color: currentcolor;
+    border-image: initial;
+    padding: 10px 24px;
+    transition: 0.5s;
+    border-radius: 25px;
+}
+a.me-4{
+    border: solid 5px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.col-12 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.footer{
+    background: #0062d3;
+    color: white;
+    text-align: center;
+    padding: 4%;
+}
+
+a.footer-link{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+/* css inline stronger than external
+    id stronger than class than h1/div
+
+    Decendant selctor 
+    div p {
+    }
+    **p inside div
+
+    background-size: cover  /  size
+    position for (images)
+              ((((color  Gradient)))))
+    background-image: linear-gradient 
+    background-image: radial-gradient (cyrcle)
+
+    border-top:  px solid color;
+    border-radius: 10px  /  50% (cycle)
+    border-top-left: different sides
+    margin: top right buttom left;d
+
+    we can to copy el path dupple click on the file
+*/
